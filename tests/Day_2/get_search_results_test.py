@@ -6,7 +6,7 @@ def run():
         page = browser.new_page()
         page.goto(url="https://playwright.dev/")
 
-        search_input = page.get_by_text("Search")
+        search_input = page.get_by_role(role='button', name="Search")
         search_input.click()
         search_input.type("Python", delay=300)
         page.keyboard.press("Enter")
