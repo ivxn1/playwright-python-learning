@@ -5,7 +5,7 @@ def run():
         browser = p.chromium.launch(headless=False)
         page = browser.new_page()
         page.goto("https://playwright.dev/")
-        page.screenshot(path="screenshots/playwright_home.png")
+        page.screenshot(path="../screenshots/playwright_home.png")
         browser.close()
 
 if __name__ == "__main__" :
